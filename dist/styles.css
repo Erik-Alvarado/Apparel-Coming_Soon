@@ -66,7 +66,7 @@ main {
 }
 
 .container .left-hub {
-  width: 60%;
+  width: 55%;
   background-image: url("/images/bg-pattern-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,8 +76,80 @@ main {
   justify-content: space-between;
 }
 
+@media (max-width: 71.875em) {
+  .container .left-hub {
+    padding-left: 125px;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .container .left-hub {
+    padding-left: 85px;
+  }
+}
+
+@media (max-width: 975px) {
+  .container .left-hub {
+    padding-left: 75px;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .container .left-hub {
+    width: 100%;
+    align-items: center;
+    padding: 28px 0;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 425px) {
+  .container .left-hub {
+    justify-content: flex-start;
+  }
+}
+
 .container .left-hub .logo {
   width: 200px;
+}
+
+@media (max-width: 56.25em) {
+  .container .left-hub .logo {
+    align-self: flex-start;
+    width: 150px;
+    margin-left: 25px;
+  }
+}
+
+.container .left-hub .mobile {
+  display: none;
+  background-image: url("/images/hero-mobile.jpg");
+}
+
+@media (max-width: 56.25em) {
+  .container .left-hub .mobile {
+    width: 100%;
+    background-size: cover;
+    display: block;
+  }
+}
+
+@media screen and (max-height: 927px) {
+  .container .left-hub .mobile {
+    height: 300px;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .container .left-hub .mobile {
+    height: 200px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container .left-hub .mobile {
+    margin: 25px 0 50px;
+  }
 }
 
 .container .left-hub .coming-soon {
@@ -85,11 +157,66 @@ main {
   width: 450px;
 }
 
+@media (max-width: 90.5em) {
+  .container .left-hub .coming-soon {
+    margin: 100px 0;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .container .left-hub .coming-soon {
+    margin: 75px 0;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .container .left-hub .coming-soon {
+    margin: 0px 0 25px;
+    text-align: center;
+    width: 400px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .container .left-hub .coming-soon {
+    margin: 50px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .container .left-hub .coming-soon {
+    width: 375px;
+    margin: 0 0 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container .left-hub .coming-soon {
+    width: 350px;
+  }
+}
+
 .container .left-hub .coming-soon h1 {
   font-size: 5rem;
   text-transform: uppercase;
   letter-spacing: 10px;
   margin-bottom: 25px;
+  animation: fadeUp ease 1s forwards;
+  opacity: 0;
+}
+
+@media (max-width: 56.25em) {
+  .container .left-hub .coming-soon h1 {
+    font-size: 3.5rem;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container .left-hub .coming-soon h1 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+  }
 }
 
 .container .left-hub .coming-soon h1 span {
@@ -98,15 +225,33 @@ main {
 }
 
 .container .left-hub .coming-soon p {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   width: 450px;
   line-height: 24px;
   color: #ce9797;
+  animation: fadeUp ease 1s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@media (max-width: 56.25em) {
+  .container .left-hub .coming-soon p {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container .left-hub .coming-soon p {
+    margin-bottom: 25px;
+  }
 }
 
 .container .left-hub .coming-soon .subscribe-form {
   display: flex;
   position: relative;
+  animation: fadeUp ease 1s forwards;
+  animation-delay: 0.75s;
+  opacity: 0;
 }
 
 .container .left-hub .coming-soon .subscribe-form .email-field {
@@ -190,22 +335,47 @@ main {
 .container .right-hub {
   background-image: url("/images/hero-desktop.jpg");
   height: 100%;
-  width: 40%;
+  width: 45%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 56.25em) {
+  .container .right-hub {
+    display: none;
+  }
 }
 
 .attribution {
   position: absolute;
   bottom: 0;
-  left: 300px;
+  left: 250px;
   right: 0;
   margin: auto auto 15px;
 }
 
 @media (max-width: 90.5em) {
   .attribution {
-    left: 200px;
+    left: 150px;
+  }
+}
+
+@media (max-width: 71.875em) {
+  .attribution {
+    left: 100px;
+  }
+}
+
+@media (max-width: 975px) {
+  .attribution {
+    left: 50px;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .attribution {
+    left: 0;
+    text-align: center;
   }
 }
 
